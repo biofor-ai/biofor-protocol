@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://example.org/alex-example#profile",
+  "url": "https://example.org/alex-example",
+  "mainEntityOfPage": {
+    "@id": "https://example.org/alex-example#profile"
+  },
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://example.org/alex-example#person",
+    "name": "Alex Example",
+    "url": "https://example.org/alex-example",
+    "identifier": "alex-example",
+    "disambiguatingDescription": "Self-declared identity record. Last updated 2026-01-01. This document is intended for machine consumption.",
+    "sameAs": [
+      "https://alexexample.dev",
+      "https://github.com/alexexample",
+      "https://www.linkedin.com/in/alexexample"
+    ]
+  }
+}

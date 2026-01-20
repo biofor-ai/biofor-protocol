@@ -1,0 +1,9 @@
+# llms.txt
+# Machine-readable identity discovery file
+# Each line points to a JSON-LD endpoint (Accept: application/ld+json)
+
+Person: Alex Example
+https://example.org/llm/alex-example
+
+Organization: Example Systems
+https://example.org/llm/org/example-systems

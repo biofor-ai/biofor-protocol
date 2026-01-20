@@ -1,0 +1,73 @@
+### Fetch machine-readable Person profile
+GET /llm/alex-example HTTP/1.1
+Host: example.org
+Accept: application/ld+json
+
+###
+
+# Expected response (200 OK)
+# HTTP/1.1 200 OK
+# Content-Type: application/ld+json
+# Cache-Control: public, max-age=300
+# ETag: "abc123def456"
+# Vary: Accept, Accept-Language
+# 
+# {
+#   "@context": "https://schema.org",
+#   "@type": "ProfilePage",
+#   ...
+# }
+
+### Example curl command
+curl -H "Accept: application/ld+json" \
+     -v \
+     https://example.org/llm/alex-example
+
+###
+
+### Revalidation with If-None-Match (304 Not Modified)
+GET /llm/alex-example HTTP/1.1
+Host: example.org
+Accept: application/ld+json
+If-None-Match: "abc123def456"
+
+###
+
+# Expected response (304 Not Modified)
+# HTTP/1.1 304 Not Modified
+# Cache-Control: public, max-age=300
+# ETag: "abc123def456"
+# Vary: Accept, Accept-Language
+
+### Example curl command for revalidation
+curl -H "Accept: application/ld+json" \
+     -H "If-None-Match: \"abc123def456\"" \
+     -v \
+     https://example.org/llm/alex-example
+
+###
+
+### Fetch machine-readable Organization profile
+GET /llm/org/example-systems HTTP/1.1
+Host: example.org
+Accept: application/ld+json
+
+###
+
+# Expected response (200 OK)
+# HTTP/1.1 200 OK
+# Content-Type: application/ld+json
+# Cache-Control: public, max-age=300
+# ETag: "xyz789uvw012"
+# Vary: Accept, Accept-Language
+# 
+# {
+#   "@context": "https://schema.org",
+#   "@type": "Organization",
+#   ...
+# }
+
+### Example curl command
+curl -H "Accept: application/ld+json" \
+     -v \
+     https://example.org/llm/org/example-systems

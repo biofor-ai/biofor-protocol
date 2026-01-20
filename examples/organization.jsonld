@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://example.org/org/example-systems#id",
+  "name": "Example Systems",
+  "url": "https://example.org/org/example-systems",
+  "mainEntityOfPage": {
+    "@id": "https://example.org/org/example-systems#id"
+  },
+  "description": "Technology company focused on building open protocols and developer tools.",
+  "sameAs": [
+    "https://examplesystems.com",
+    "https://github.com/examplesystems"
+  ],
+  "founder": {
+    "@id": "https://example.org/alex-example#person"
+  }
+}

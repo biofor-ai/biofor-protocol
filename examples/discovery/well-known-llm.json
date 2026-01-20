@@ -1,0 +1,8 @@
+{
+  "protocolName": "BioFor Protocol",
+  "protocolVersion": "v0.1.0",
+  "specification": "https://github.com/biofor-ai/biofor-protocol/blob/main/SPEC.MD",
+  "discovery": {
+    "llms_txt": "/llms.txt"
+  }
+}
